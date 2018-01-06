@@ -1,2 +1,2 @@
-# KR_PROJ
-My projects' repository
+# KR_CV
+My online CV
