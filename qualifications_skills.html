@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<title>Ken Ric Ooi's Bio Page</title>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Qualifications & skills" />
+	<meta name="author" content="Ken Ric, Ooi"/>
+	<!-- <meta name="keywords" content="" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		p#p1 {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 6em;
+		}
+
+		button {
+			margin-bottom: 0;
+		  cursor: pointer;
+		  text-align: left;
+		  border: none;
+		  outline: none;
+		}
+
+		.accordion_gray1 {
+		  color: #444444;
+		  background-color: #dddddd;
+		  width: 100%;
+		  margin-top: 30px;
+		  transition: 0.5s;
+		}
+
+		.accordion_gray1:hover {
+		  color: #fff;
+		  background-color: #bbbbbb;
+		}
+
+		div#year_list {
+			display: none;
+		}
+
+		.gray2 {
+		  color: #333333;
+		  background-color: #e8e8e8;
+		  list-style-position: inside;
+		  margin-top: 0;
+		  margin-bottom: 0;
+		  padding-left: 15px;
+		  width: 100%;
+		  transition: 0.5s;
+		}
+
+		.gray2:hover {
+		  color: #fff;
+		  background-color: #bbbbbb;
+		}
+
+/*		.active {
+			color: #fff;
+			background-color: #000;
+		}
+*/
+
+		div ul {
+			margin-top: 2px;
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="edu">
+		<h1>Education</h1>
+		<img src="img/monash.png" alt="Monash logo" style="float:left; width: 90px; "/>
+		<p id="p1"><b>Bachelor of Mechatronics Engineering (First-Class Honours)</b></p>
+		<p id="p1">Monash University</p>
+		<p id="p1">CGPA: 3.469</p>
+		<p id="p1">Weighted Average Marks (WAM): 77.964% </p>
+	</div>
+
+	<div id="uni_subjects_dropdownlist" style="clear:left">
+		<button class="accordion_gray1"> + Click here to view units completed </button>
+		<div id="year_list">
+			<button class="gray2">+ Year 4</button>
+			<ul>
+				<li>MEC4418: Control Systems </li>
+				<li>MEC4446: Composite Structures </li>
+				<li> <dl>
+					<dt>TRC4000/4001: Mechatronics Final Year Project I /II</dt>
+					<dd>Research focus: Simultaneous Localisation & Mapping (SLAM) and path-planning</dd>
+				</dl> </li>
+				<li>TRC4800: Robotics </li>
+				<li>ECE4078: Intelligent Robotics </li>
+				<li>MEC4425: Micro/Nano Solid & Fluid Mechanics </li>
+				<li>TRC4002: Professional Practice </li>
+			</ul>
+			<button class="gray2">+ Year 3</button>
+			<ul>
+				<li>ECE3073: Computer Systems </li>
+				<li>MEC4426: Computer-Aided Design </li>
+				<li>TRC3200: Dynamical Systems </li>
+				<li>TRC3500: Sensors and Artificial Perception </li>
+				<li>ECE3051: Electrical Energy Systems </li>
+				<li>TRC3000: Mechatronics Project II </li>
+				<li>TRC3600: Modelling & Control </li>
+				<li>TRC3801: Mechatronics & Manufacturing </li>
+			</ul>
+			<button class="gray2">+ Year 2</button>
+			<ul>
+				<li>ECE2072: Digital Systems </li>
+				<li>ENG2092: Advanced Engineering Mathematics B </li>
+				<li>TRC2000: Mechatronics Project I </li>
+				<li>TRC2200: Thermofluids & Power Systems </li>
+				<li>ECE2061: Analogue Electronics </li>
+				<li>ECE2071: Computer Organisation & Programming </li>
+				<li>MEC2402: Engineering Design I </li>
+				<li>TRC2201: Mechanics </li>
+			</ul>
+			<button class="gray2">+ Year 1</button>
+			<ul>
+				<li>ENG1040: Engineering Dynamics </li>
+				<li>ENG1050: Engineering Materials </li>
+				<li>ENG1061: Engineering Profession </li>
+				<li>ENG1091: Mathematics for Engineering </li>
+				<li>ENG1010: Process Systems Analysis </li>
+				<li>ENG1020: Engineering Structures </li>
+				<li>ENG1030: Electrical Systems </li>
+				<li>ENG1060: Computing for Engineers </li>
+			</ul>
+		</div>
+	</div>
+
+<!-- JS script to toggle display of years dropdown list -->
+<script>
+	var acc = document.getElementsByClassName("accordion_gray1");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].addEventListener("click", function() {
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    });
+	}
+</script>
+
+<!-- JS script to toggle display of subjects (for each year) dropdown list -->
+<script>
+	var acc = document.getElementsByClassName("gray2");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].addEventListener("click", function() {
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    });
+	}
+</script>
+
+</body>
+
+</html>
