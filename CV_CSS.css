@@ -28,6 +28,7 @@ footer {
 }
 
 section {
+  height: 100%;
   margin-left: 250px;
   padding-left: 1%;
 }
@@ -45,10 +46,11 @@ img {
 
 
 iframe {
-  height: 450px;
+  height: 450px; /*Gotta figure out a way to make this iFrame responsive*/
   width: 100%;
-  /*border: none;*/
-
+  border: none;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 /* The side navigation menu */

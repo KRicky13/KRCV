@@ -1,0 +1,102 @@
+div img {
+	float:left;
+	width: 90px;
+}
+
+p#p1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 6em;
+}
+
+div#uni_subjects_drowdownlist {
+	clear: left;
+}
+
+button {
+	margin-bottom: 0;
+	cursor: pointer;
+	text-align: left;
+	border: none;
+	outline: none;
+}
+
+.accordion_gray1 {
+	color: #444444;
+	background-color: #dddddd;
+	width: 100%;
+	margin-top: 30px;
+	transition: 0.5s;
+}
+
+.accordion_gray1:hover {
+	color: #fff;
+	background-color: #bbbbbb;
+}
+
+div#year_list {
+	display: none;
+}
+
+.gray2 {
+	color: #333333;
+	background-color: #e8e8e8;
+	list-style-position: inside;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 15px;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.gray2:hover {
+	color: #fff;
+	background-color: #bbbbbb;
+}
+
+/*.active {
+color: #fff;
+background-color: #000;
+}
+*/
+
+ul#default_hide {
+	margin-top: 2px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	vertical-align: top;
+}
+
+
+td ul {
+	padding: 0 13px;
+	list-style-position: inside;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+dt {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: inline;
+}
+
+/*General styling to remove margins before and after description lists within unordered lists*/
+div dl {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*div ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+*/
